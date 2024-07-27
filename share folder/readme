@@ -1,0 +1,5 @@
+宿主机：
+qemu-system-x86_64 -enable-kvm -name ubuntutest  -m 4096 -hda ubuntutest.img -boot d -virtfs local,path=/home/pipishuo/KVM_Share/,mount_tag=hostshare,security_model=none,id=hostshare
+
+目标机：
+sudo mount -t 9p hostshare /home/ppshuo/share

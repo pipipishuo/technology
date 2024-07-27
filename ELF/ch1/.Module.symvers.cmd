@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/technology/ELF/ch1/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/pipishuo/Desktop/technology/ELF/ch1/Module.symvers -T /home/pipishuo/Desktop/technology/ELF/ch1/modules.order -i Module.symvers -e 

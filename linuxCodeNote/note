@@ -1,0 +1,13 @@
+filesystem:
+     do_sys_openat2
+     set_nameidata(&nd, dfd, pathname, NULL);  这个设置了一下需要用到的的nameidata 跟当前
+     path_openat:
+     分配一个空的file结构体，然后就去初始化路径path_init 初始化完就去查然后打开
+     path_openat{
+        alloc_empty_file  这个看样子不仅给file指针分配了内存，还应该进行了一些别的操作
+        根据文件的flag不同有三种，字面意思就是临时文件、路径、还有真正的文件，这么说应该之前就确定了我们要打开的是啥啦
+        故且认为最后那个就是一般的文件吧
+        {
+            先初始化路径，刚才看了 里面还对nameidata作了不少设定 返回值s就是输入的真实路径
+            然后呢用了一个while去进行一个条件执行，有点意思先执行link_path_walk，然后再执行open_last_lookups  返回s 这s变了吗，三个形参有变化吗
+            还没问题的话最后一步do_open 这才是大头吧

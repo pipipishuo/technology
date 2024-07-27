@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/technology/ELF/ch1/sample/sample.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/pipishuo/Desktop/technology/ELF/ch1/sample/sample.ko /home/pipishuo/Desktop/technology/ELF/ch1/sample/sample.o /home/pipishuo/Desktop/technology/ELF/ch1/sample/sample.mod.o

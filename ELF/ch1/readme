@@ -1,0 +1,3 @@
+1:目前已经能够读section表了，还需对每个表项所对应的section进行解析。目前看来 symbol table比较基础且重要，好多section对应来于它，然后是relocation这个还得再深入了解一下，最后就是调用了，这个连sectiontype还不知道是啥呢，目前还一无所知。
+2：初步设想是先解析最普通的out文件然后再是ko文件
+3:莫非symbol table里面的symbol就是vs经常提示报的未找到该符号的符号？

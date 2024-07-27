@@ -1,0 +1,2 @@
+likely()与unlikely(），在逻辑功能是一样的，也就是不影响条件判断
+if(likely(e))与if(unlikely()
