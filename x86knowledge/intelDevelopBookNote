@@ -1,0 +1,10 @@
+这个文档主要记载了一些自己看intel开发手册的心得
+m16：一个内存位置 16位的数据
+m32: 一个内存位置 32位的数据
+r16：16位寄存器
+r32: 32位寄存器
+
+阿哈果然是
+详见手册3.1.1.3 Instruction Column in the Opcode Summary Table
+
+指令怎么看还有讲究呢好像是 2.1节INSTRUCTION FORMAT FOR PROTECTED MODE
