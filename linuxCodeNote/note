@@ -11,3 +11,4 @@ filesystem:
             先初始化路径，刚才看了 里面还对nameidata作了不少设定 返回值s就是输入的真实路径
             然后呢用了一个while去进行一个条件执行，有点意思先执行link_path_walk，然后再执行open_last_lookups  返回s 这s变了吗，三个形参有变化吗
             还没问题的话最后一步do_open 这才是大头吧
+  hash_len 很有用，根据这个去建表查询,怎么建立的我得好好看看

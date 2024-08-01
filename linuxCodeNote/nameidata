@@ -1,0 +1,40 @@
+struct nameidata {
+	struct path	path;           //这个干啥用的？存了两个指针  存指针莫非是dentry在哪已经存上了 指过去就行？
+	struct qstr	last;           //构建hash表用的存着hash值 从目前来看 这hash表真有用  他是把dentry串起来的  一个hash键当然可以有多个值了，所以用链表串起来       
+	struct path	root;           //root  根的？这个b值为空我去
+	struct inode	*inode; /* path.dentry.d_inode */
+	unsigned int	flags, state;
+	unsigned	seq, next_seq, m_seq, r_seq;        //这四个值是干嘛用的？顺序锁
+	int		last_type;
+	unsigned	depth;
+	int		total_link_count;
+	struct saved {
+		struct path link;
+		struct delayed_call done;
+		const char *name;
+		unsigned seq;
+	} *stack, internal[EMBEDDED_LEVELS];
+	struct filename	*name;                  //这个里面记着初始文件路径的信息
+	struct nameidata *saved;                //saved?构成链表用的
+	unsigned	root_seq;
+	int		dfd;
+	vfsuid_t	dir_vfsuid;
+	umode_t		dir_mode;
+} __randomize_layout;
+
+
+struct qstr {
+	union {
+		struct {
+			HASH_LEN_DECLARE;
+		};
+		u64 hash_len;               //记hash值和长度(长度是当前这一节儿多长)用的
+	};
+	const unsigned char *name;      //毫无疑问存文件路径的  但会随着那啥变化
+};
+
+
+慢的时候查这个表in_lookup_hashtable
+快的时候查这个表dentry_hashtable
+
+p *$container_of(, "struct nameidata", "path")

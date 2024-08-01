@@ -1,0 +1,5 @@
+1 cs-代码段寄存器  ds-数据段寄存器  es-附加段寄存器 fs-附加段寄存器 gs-附加段寄存器 ss-堆栈寄存器
+2 cs:ip  ss:sp
+3 push 指令:(1)sp=sp-2 (2)将data放入到ss:sp指向的内存位置  例:1 push 寄存器 2 push 内存位置 3 push 数字 4 push cs、ss、ds、es、fs、gs
+4 pop 指令：(1)将ss:sp的数据放到data中(2)sp=sp+2           例:1 pop 寄存器 2 pop 内存位置 3 pop ds\es\fs\ss
+5 call 指令:(1)先把cs ip 入栈，（2）给cs ip 寄存器赋新值  注意：有近的和远的  区别在于代码段（cs）变不变,yes 他还和特权级转变有关 
