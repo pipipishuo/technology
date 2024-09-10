@@ -1,0 +1,10 @@
+qemu-system-x86_64 -enable-kvm -name ubuntutest  -m 4096 -hda ubuntutest.img -boot d -virtfs local,path=/home/pipishuo/KVM_Share/,mount_tag=hostshare,security_model=none,id=hostshare -s -S
+
+target remote :1234
+
+b do_sys_openat2 if $_streq(filename, "dirTest/ppshuoTest")
+
+
+p *$container_of(0xffff888101910000, "struct filename", "name")
+p *$container_of(0xffff888101910000, "struct nameidata", "path")
+p *$container_of(0xffff888101910000, "struct dentry", "d_flags")
