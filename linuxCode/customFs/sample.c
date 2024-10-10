@@ -1,12 +1,11 @@
 #include <linux/init.h>
 #include <linux/module.h>
  
-#include"obj.h" 
 MODULE_LICENSE("Dual BSD/GPL");
+ 
 static int hello_init(void)
 {
-    testAddssss();
-        //printk(KERN_ALERT "Hello, world\n");
+        printk(KERN_ALERT "Hello, world\n");
         return 0;
 }
  

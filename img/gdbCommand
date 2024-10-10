@@ -1,0 +1,3 @@
+file ~/KVM_Share/linux/linux-6.10/vmlinux
+target remote :1234
+c

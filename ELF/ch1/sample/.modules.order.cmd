@@ -1,1 +1,1 @@
-savedcmd_/home/pipishuo/Desktop/technology/ELF/ch1/sample/modules.order := {   echo /home/pipishuo/Desktop/technology/ELF/ch1/sample/sample.o; :; } > /home/pipishuo/Desktop/technology/ELF/ch1/sample/modules.order
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/modules.order := {   echo /home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/sam.o; :; } > /home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/modules.order

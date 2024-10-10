@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/Module.symvers -T /home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/modules.order -i Module.symvers -e 

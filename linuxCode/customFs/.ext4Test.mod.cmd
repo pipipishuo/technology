@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/ext4Test.mod := printf '%s\n'   ext4Test.o | awk '!x[$$0]++ { print("/home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/"$$0) }' > /home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/ext4Test.mod

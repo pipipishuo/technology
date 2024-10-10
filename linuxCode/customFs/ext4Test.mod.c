@@ -27,7 +27,7 @@ __section(".gnu.linkonce.this_module") = {
 	.arch = MODULE_ARCH_INIT,
 };
 
-#ifdef CONFIG_MITIGATION_RETPOLINE
+#ifdef CONFIG_RETPOLINE
 MODULE_INFO(retpoline, "Y");
 #endif
 
@@ -35,13 +35,20 @@ MODULE_INFO(retpoline, "Y");
 
 static const struct modversion_info ____versions[]
 __used __section("__versions") = {
+	{ 0x21b5acf6, "mount_bdev" },
+	{ 0x1d4a746e, "iget_locked" },
+	{ 0xa0d43313, "d_make_root" },
+	{ 0x89b4f426, "generic_ro_fops" },
+	{ 0xfbcbf6b8, "unlock_new_inode" },
+	{ 0x122c3a7e, "_printk" },
+	{ 0x35eb2fa5, "kill_block_super" },
 	{ 0x5b8239ca, "__x86_return_thunk" },
 	{ 0xbdfb6dbb, "__fentry__" },
-	{ 0x122c3a7e, "_printk" },
-	{ 0x81889808, "module_layout" },
+	{ 0xa8aeb177, "register_filesystem" },
+	{ 0x708cd699, "module_layout" },
 };
 
 MODULE_INFO(depends, "");
 
 
-MODULE_INFO(srcversion, "31FE72DA6A560C890FF9B3F");
+MODULE_INFO(srcversion, "8696D8FB8CDA05AC533A953");

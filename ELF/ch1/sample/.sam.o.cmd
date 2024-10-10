@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/sam.o := ld -m elf_x86_64 -z noexecstack   -r -o /home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/sam.o @/home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/sam.mod 

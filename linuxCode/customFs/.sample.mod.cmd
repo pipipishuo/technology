@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/sample.mod := printf '%s\n'   sample.o | awk '!x[$$0]++ { print("/home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/"$$0) }' > /home/pipishuo/Desktop/knowledge/technology/linuxCode/customFs/sample.mod

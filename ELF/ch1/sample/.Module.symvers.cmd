@@ -1,1 +1,1 @@
-savedcmd_/home/pipishuo/Desktop/technology/ELF/ch1/sample/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/pipishuo/Desktop/technology/ELF/ch1/sample/Module.symvers -T /home/pipishuo/Desktop/technology/ELF/ch1/sample/modules.order -i Module.symvers -e 
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/Module.symvers -T /home/pipishuo/Desktop/knowledge/technology/ELF/ch1/sample/modules.order -i Module.symvers -e 
