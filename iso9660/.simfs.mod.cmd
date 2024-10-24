@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/iso9660/simfs.mod := printf '%s\n'   simfs.o | awk '!x[$$0]++ { print("/home/pipishuo/Desktop/knowledge/technology/iso9660/"$$0) }' > /home/pipishuo/Desktop/knowledge/technology/iso9660/simfs.mod

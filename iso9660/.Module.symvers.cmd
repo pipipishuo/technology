@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/iso9660/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/pipishuo/Desktop/knowledge/technology/iso9660/Module.symvers -T /home/pipishuo/Desktop/knowledge/technology/iso9660/modules.order -i Module.symvers -e 

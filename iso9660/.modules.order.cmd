@@ -1,0 +1,1 @@
+savedcmd_/home/pipishuo/Desktop/knowledge/technology/iso9660/modules.order := {   echo /home/pipishuo/Desktop/knowledge/technology/iso9660/simfs.o; :; } > /home/pipishuo/Desktop/knowledge/technology/iso9660/modules.order
